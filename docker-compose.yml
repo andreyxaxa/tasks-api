@@ -1,0 +1,15 @@
+version: "3.9"
+
+x-app-environment: &x-app-environment
+  # HTTP
+  HTTP_PORT: "8080"
+
+services:
+  tasks:
+    build:
+      context: .
+    container_name: tasks_service
+    environment:
+      <<: *x-app-environment
+    ports:
+    - "8080:8080"
