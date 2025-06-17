@@ -42,7 +42,7 @@ curl -X GET http://localhost:8080/v1/tasks/94c56cdf-7001-4447-816b-75bba15dd461
 }
 
 ```
-3. Удаление задачи по ID (DELETE /v1/tasks/{id})
+3. Удаление задачи по ID (POST /v1/tasks/{id})
 
 Запрос:
 ```
